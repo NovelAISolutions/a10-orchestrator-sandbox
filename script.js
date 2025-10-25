@@ -1,2 +1,2 @@
-// JavaScript file linked successfully
-console.log('JavaScript is linked!');
+// JavaScript code will go here
+console.log('Sandbox initialized');
