@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => { console.log('✅ A10 Orchestrator Sandbox initialized successfully'); });
+// Future JavaScript functionality will go here.
