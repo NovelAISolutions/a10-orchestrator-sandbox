@@ -1,7 +1,1 @@
-:root{--brand:#6b7cff;--bg:#0b0e12;--text:#e7e9ef}
-.banner {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
+:root{--brand:#6b7cff;--bg:#0b0e12;--text:#e7e9ef}body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;margin:0;padding:0}
