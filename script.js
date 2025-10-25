@@ -1,2 +1,1 @@
-// JavaScript code will go here
-console.log('Sandbox initialized');
+console.log("A10 sandbox ready");
