@@ -1,2 +1,2 @@
-// JavaScript functionality can be added here
-console.log('Script loaded successfully.');
+// JavaScript file linked successfully
+console.log('JavaScript is linked!');
