@@ -1,4 +1,39 @@
-/* a10 coder verification */
-:root{--brand:#6b7cff;--bg:#0b0e12;--text:#e7e9ef}
-body{background:#cfe8ff;color:var(--text);font-family:Inter,system-ui,sans-serif;margin:0;padding:0}
-.hero{padding:32px;text-align:center}
+:root {
+  --brand: #6b7cff;
+  --bg: #e8f0ff;
+  --text: #0b0e12;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.hero {
+  background: var(--brand);
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 50px 20px;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: #f0f0f0;
+  color: #444;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+}
+
+h1, h2, p {
+  margin: 10px 0;
+}
