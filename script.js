@@ -1,1 +1,2 @@
-// Future JavaScript functionality will go here.
+// JavaScript functionality can be added here
+console.log('Script loaded successfully.');
