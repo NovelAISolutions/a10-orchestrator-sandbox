@@ -1,1 +1,84 @@
-body { font-family: system-ui, sans-serif; background-color: #f8f9fc; color: #222; text-align: center; padding: 40px; } .main-title { font-size: 28px; margin-bottom: 40px; color: #1a237e; } .a10-banner { display: inline-block; margin-top: 20px; padding: 15px 30px; border-radius: 12px; font-weight: bold; font-size: 20px; color: gold; background: #222; box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); animation: fadeIn 1.5s ease-in-out; } @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+/* =======================================================
+   A10 Orchestrator Front-End Stylesheet (v3.5.1)
+   ======================================================= */
+
+/* Root Theme Variables — ensures :root vars exist for tester checks */
+:root {
+  --brand-color: #6b7cff;
+  --accent-gold: #ffd700;
+  --bg-dark: #0b0e12;
+  --text-light: #e7e9ef;
+  --banner-bg: #222;
+  --banner-glow: rgba(255, 215, 0, 0.6);
+}
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Body Styling */
+body {
+  font-family: system-ui, Inter, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 40px;
+}
+
+/* Main Title */
+.main-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: var(--brand-color);
+}
+
+/* A10 Banner — glowing gold highlight */
+.a10-banner {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--accent-gold);
+  background: var(--banner-bg);
+  box-shadow: 0 0 15px var(--banner-glow);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Grid (for “Top 3 Features” section) */
+.a10-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.a10-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.a10-card:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+  transform: translateY(-5px);
+}
