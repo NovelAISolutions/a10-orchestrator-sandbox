@@ -1,75 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Marketing Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Showcasing the vibrant collaboration between Labubu and Gurley Team.">
+  <meta property="og:title" content="Labubu x Gurley Team Collaboration">
+  <meta property="og:description" content="Explore the art and characters from Labubu and Gurley Team.">
+  <meta property="og:image" content="path/to/social-preview.jpg">
+  <title>Labubu x Gurley Team</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#hero">Home</a>
-        <a href="#features">Features</a>
-        <a href="#counters">Counters</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-    </header>
-    <section id="hero">
-        <img src="assets/logo.svg" alt="Logo" class="logo">
-        <h1>Welcome to Our Service</h1>
-        <p>Your success starts here. Join us today!</p>
-        <div class="hero-cta">
-            <a href="#contact" class="primary">Get Started</a>
-            <a href="#features" class="secondary">Learn More</a>
-        </div>
-    </section>
-    <section id="features">
-        <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <h3>Feature One</h3>
-            <p>Description of feature one.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Feature Two</h3>
-            <p>Description of feature two.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">💡</div>
-            <h3>Feature Three</h3>
-            <p>Description of feature three.</p>
-        </div>
-    </section>
-    <section id="counters">
-        <div class="counter" data-target="1000">0</div>
-        <div class="counter" data-target="500">0</div>
-        <div class="counter" data-target="300">0</div>
-    </section>
-    <section id="testimonials">
-        <div class="testimonial">
-            <p>Testimonial 1: This service changed my life!</p>
-        </div>
-        <div class="testimonial">
-            <p>Testimonial 2: Highly recommend to everyone!</p>
-        </div>
-        <div class="testimonial">
-            <p>Testimonial 3: A game changer in my business!</p>
-        </div>
-    </section>
-    <section id="contact">
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-    </footer>
-    <script src="script.js"></script>
+  <header id="hero">
+    <h1>Gurley Team x Labubu</h1>
+    <img src="images/hero-banner.jpg" alt="Hero Banner">
+  </header>
+
+  <section id="about">
+    <h2>About the Collaboration</h2>
+    <p>Discover the creative blend of Labubu's playful art with Gurley Team's stylish aesthetic.</p>
+  </section>
+
+  <section id="showcase">
+    <h2>Labubu Character Showcase</h2>
+    <div class="gallery-grid">
+      <img src="images/labubu1.jpg" alt="Labubu Figure 1">
+      <img src="images/labubu2.jpg" alt="Labubu Figure 2">
+      <img src="images/labubu3.jpg" alt="Labubu Figure 3">
+      <img src="images/labubu4.jpg" alt="Labubu Figure 4">
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="carousel">
+      <img src="images/sample-gallery1.jpg" alt="Gallery Image 1">
+      <img src="images/sample-gallery2.jpg" alt="Gallery Image 2">
+      <!-- Additional gallery images -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Labubu x Gurley Team. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+File Name: public/style.css
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header#hero {
+  text-align: center;
+  background-color: #ffe4e1;
+  padding: 2rem;
+}
+
+h1 {
+  color: #ff69b4;
+}
+
+section {
+  padding: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+footer {
+  background-color: #e6e6fa;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  color: #4682b4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
