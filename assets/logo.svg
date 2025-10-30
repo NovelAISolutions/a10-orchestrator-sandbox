@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="logoTitle" role="img">
-  <title id="logoTitle">Company Logo</title>
-  <circle cx="50" cy="50" r="40" fill="var(--accent)" />
-  <text x="50" y="55" font-family="Inter, sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">Logo</text>
-</svg>
