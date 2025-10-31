@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +15,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.0.45/lenis.min.js"></script>
     
-    <link rel="stylesheet" href="css/main.css">
+    <!-- INLINE CSS - This will fix your styling issues immediately -->
+    <style>
+        /* Compiled CSS for Salonify */
+        *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px}@media (max-width:768px){html{font-size:14px}}body{font-family:"Inter",system-ui,sans-serif;font-size:1.125rem;line-height:1.75rem;font-weight:400;color:#1B1C1D;background:#FFFFFF;overflow-x:hidden}.display{font-family:"Playfair Display",serif;font-size:4rem;line-height:4.5rem;font-weight:700;letter-spacing:-0.01em;margin-bottom:2rem}@media (max-width:768px){.display{font-size:3rem;line-height:3.5rem}}h1,.h1{font-family:"Inter",system-ui,sans-serif;font-size:3rem;line-height:3.5rem;font-weight:600;letter-spacing:-0.01em;margin-bottom:2rem}h2,.h2{font-family:"Inter",system-ui,sans-serif;font-size:2rem;line-height:2.5rem;font-weight:500;margin-bottom:1rem}.caption{font-size:0.875rem;line-height:1.25rem;font-weight:500;color:#4A4B4C}a{color:#E66B5D;text-decoration:none;transition:color 250ms cubic-bezier(0.2, 0.8, 0.2, 1)}a:hover{color:#d45a4c}.btn{display:inline-flex;align-items:center;justify-content:center;padding:0.5rem 2rem;border-radius:0.5rem;font-weight:600;font-size:1.125rem;line-height:1;border:none;cursor:pointer;transition:all 250ms cubic-bezier(0.2, 0.8, 0.2, 1);text-decoration:none}.btn--primary{background:#E66B5D;color:#FFFFFF}.btn--primary:hover{background:#d45a4c;transform:scale(1.03)}.btn--secondary{background:transparent;color:#1B1C1D;border:1px solid #D1D5DB}.btn--secondary:hover{border-color:#E66B5D;color:#E66B5D}.btn--text{background:transparent;color:#1B1C1D;padding:0.5rem 0}.btn--text:hover{color:#E66B5D}.btn--large{padding:1rem 4rem;font-size:1.125rem}button:focus-visible,a:focus-visible{outline:2px solid #E66B5D;outline-offset:2px}.container{max-width:1200px;margin:0 auto;padding:0 2rem}.grid{display:grid;grid-template-columns:repeat(12, 1fr);gap:2rem}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0}section{padding:8rem 0}@media (max-width:768px){section{padding:4rem 0}}.text-center{text-align:center}.mb-sm{margin-bottom:1rem}.mb-md{margin-bottom:2rem}.mb-lg{margin-bottom:4rem}.nav{position:fixed;top:0;left:0;right:0;background:rgba(255, 255, 255, 0.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(209, 213, 219, 0.5);z-index:1000;padding:1rem 0}.nav__container{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 2rem}.nav__logo h2{font-family:"Playfair Display",serif;font-size:1.5rem;color:#E66B5D;font-weight:700}.nav__menu{display:flex;align-items:center;gap:2rem;list-style:none}@media (max-width:1024px){.nav__menu{display:none}}.nav__menu a{color:#1B1C1D;font-weight:500;padding:0.5rem 1rem;border-radius:0.5rem;transition:all 250ms cubic-bezier(0.2, 0.8, 0.2, 1)}.nav__menu a:hover{color:#E66B5D;background:#F9E4E1}.nav__cta{margin-left:1rem}.nav__hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer}@media (max-width:1024px){.nav__hamburger{display:flex}}.nav__hamburger span{width:24px;height:2px;background:#1B1C1D;transition:all 250ms cubic-bezier(0.2, 0.8, 0.2, 1)}@media (max-width:768px){.nav__menu--mobile{display:flex;position:absolute;top:100%;left:0;right:0;background:#FFFFFF;flex-direction:column;padding:2rem;border-top:1px solid #D1D5DB;box-shadow:0 8px 30px rgba(0, 0, 0, 0.12)}}.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg, #F9E4E1 0%, #FFFFFF 50%, #F9E4E1 100%);position:relative;overflow:hidden}.hero__container{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:center}@media (max-width:1024px){.hero__container{grid-template-columns:1fr;gap:4rem;text-align:center}}.hero__title{font-family:"Playfair Display",serif;font-size:4rem;line-height:4.5rem;font-weight:700;letter-spacing:-0.01em;margin-bottom:2rem;color:#1B1C1D}@media (max-width:768px){.hero__title{font-size:3rem;line-height:3.5rem}}.hero__subtitle{font-size:1.125rem;line-height:1.75rem;color:#4A4B4C;margin-bottom:4rem;max-width:500px}@media (max-width:1024px){.hero__subtitle{max-width:none;margin:0 auto 4rem}}.hero__cta-group{display:flex;gap:2rem;align-items:center}@media (max-width:768px){.hero__cta-group{flex-direction:column;gap:1rem}}.hero__visual{position:relative;display:flex;justify-content:center;align-items:center}.hero__gradient{width:400px;height:400px;background:radial-gradient(circle, #E66B5D 0%, transparent 70%);opacity:0.1;border-radius:50%;position:absolute;animation:float 6s ease-in-out infinite}.hero__mockup{width:500px;height:300px;background:#FFFFFF;border-radius:2rem;box-shadow:0 20px 60px rgba(0, 0, 0, 0.15);position:relative;z-index:2;border:1px solid #D1D5DB}@media (max-width:768px){.hero__mockup{width:100%;max-width:400px;height:250px}}.hero__scroll-cue{position:absolute;bottom:4rem;left:50%;transform:translateX(-50%);text-align:center;color:#4A4B4C;font-size:0.875rem}.hero__scroll-cue span{display:block;margin-bottom:0.5rem}.scroll-arrow{width:2px;height:20px;background:#4A4B4C;margin:0 auto;position:relative;animation:bounce 2s infinite}.scroll-arrow::after{content:'';position:absolute;bottom:-4px;left:-3px;width:8px;height:8px;border-right:2px solid #4A4B4C;border-bottom:2px solid #4A4B4C;transform:rotate(45deg)}@keyframes float{0%,100%{transform:translateY(0px)}50%{transform:translateY(-20px)}}@keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}60%{transform:translateY(-5px)}}.features{background:#FFFFFF;position:relative}.features .container{max-width:1200px;margin:0 auto;padding:0 2rem}.features__grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:4rem}@media (max-width:1024px){.features__grid{grid-template-columns:1fr;gap:2rem}}.feature-tile{background:#FFFFFF;padding:4rem;border-radius:2rem;border:1px solid #D1D5DB;text-align:center;transition:all 400ms cubic-bezier(0.2, 0.8, 0.2, 1);position:relative;overflow:hidden}.feature-tile::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg, #E66B5D, #F6B93B);transform:scaleX(0);transition:transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1)}.feature-tile:hover{transform:translateY(-12px);box-shadow:0 20px 60px rgba(0, 0, 0, 0.15);border-color:#E66B5D}.feature-tile:hover::before{transform:scaleX(1)}.feature-tile:hover .feature-tile__icon{transform:scale(1.1)}.feature-tile__icon{font-size:3rem;margin-bottom:2rem;transition:all 400ms cubic-bezier(0.2, 0.8, 0.2, 1)}.feature-tile__title{font-size:2rem;font-weight:600;margin-bottom:1rem;color:#1B1C1D}.feature-tile__desc{color:#4A4B4C;line-height:1.75rem}.steps{background:linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%)}.steps .container{max-width:1200px;margin:0 auto;padding:0 2rem}.steps__title{text-align:center;margin-bottom:8rem;font-family:"Playfair Display",serif;font-size:3rem;color:#1B1C1D}.steps__process{display:grid;grid-template-columns:repeat(5, 1fr);gap:2rem}@media (max-width:1024px){.steps__process{grid-template-columns:repeat(2, 1fr);gap:4rem}}@media (max-width:768px){.steps__process{grid-template-columns:1fr}}.step{text-align:center;position:relative}.step:not(:last-child)::after{content:'';position:absolute;top:3rem;right:-2rem;width:calc(100% - 4rem);height:2px;background:linear-gradient(90deg, #E66B5D, transparent)}@media (max-width:1024px){.step:not(:last-child)::after{display:none}}.step__number{font-size:3rem;font-weight:700;color:#E66B5D;margin-bottom:1rem;font-family:"Playfair Display",serif}.step__title{font-size:1.25rem;font-weight:600;margin-bottom:0.5rem;color:#1B1C1D}.step__desc{color:#4A4B4C;font-size:1.125rem}.testimonials{background:#FFFFFF}.testimonials .container{max-width:1200px;margin:0 auto;padding:0 2rem}.testimonials__title{text-align:center;margin-bottom:8rem;font-family:"Playfair Display",serif;font-size:3rem;color:#1B1C1D}.testimonials__carousel{display:grid;grid-template-columns:repeat(3, 1fr);gap:4rem}@media (max-width:1024px){.testimonials__carousel{grid-template-columns:1fr;gap:2rem}}.testimonial{background:#FFFFFF;padding:4rem;border-radius:2rem;border:1px solid #D1D5DB;text-align:center;transition:all 400ms cubic-bezier(0.2, 0.8, 0.2, 1)}.testimonial:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0, 0, 0, 0.12);border-color:#E66B5D}.testimonial__avatar{width:80px;height:80px;background:linear-gradient(135deg, #E66B5D, #F6B93B);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;color:#FFFFFF;font-weight:600;font-size:1.5rem}.testimonial__quote{font-style:italic;color:#1B1C1D;line-height:1.75rem;margin-bottom:2rem;position:relative}.testimonial__quote::before,.testimonial__quote::after{content:'"';color:#F9E4E1;font-size:2rem;position:absolute}.testimonial__quote::before{top:-10px;left:-5px}.testimonial__quote::after{bottom:-20px;right:-5px}.testimonial__author strong{display:block;color:#1B1C1D;margin-bottom:0.5rem}.testimonial__author span{color:#4A4B4C;font-size:0.875rem}.trust{background:#F8FAFC;padding:4rem 0}.trust .container{max-width:1200px;margin:0 auto;padding:0 2rem}.trust__badges{display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:2rem}@media (max-width:768px){.trust__badges{flex-direction:column;gap:1rem}}.trust-badge{padding:1rem 2rem;background:#FFFFFF;border:1px solid #D1D5DB;border-radius:1rem;font-weight:600;color:#1B1C1D;transition:all 250ms cubic-bezier(0.2, 0.8, 0.2, 1)}.trust-badge:hover{border-color:#E66B5D;color:#E66B5D;transform:translateY(-2px)}.footer{background:#1B1C1D;color:#FFFFFF;padding:8rem 0 4rem}.footer .container{max-width:1200px;margin:0 auto;padding:0 2rem}.footer__content{display:grid;grid-template-columns:1fr 2fr;gap:8rem;margin-bottom:4rem}@media (max-width:1024px){.footer__content{grid-template-columns:1fr;gap:4rem}}.footer__brand h3{font-family:"Playfair Display",serif;font-size:1.5rem;color:#E66B5D;margin-bottom:1rem}.footer__brand p{color:#D1D5DB;line-height:1.75rem}.footer__links{display:grid;grid-template-columns:repeat(4, 1fr);gap:4rem}@media (max-width:1024px){.footer__links{grid-template-columns:repeat(2, 1fr)}}@media (max-width:768px){.footer__links{grid-template-columns:1fr}}.footer__column h4{color:#FFFFFF;margin-bottom:2rem;font-weight:600}.footer__column a{display:block;color:#D1D5DB;margin-bottom:1rem;transition:color 250ms cubic-bezier(0.2, 0.8, 0.2, 1)}.footer__column a:hover{color:#E66B5D}.footer__bottom{border-top:1px solid #4A4B4C;padding-top:2rem;text-align:center;color:#D1D5DB;font-size:0.875rem}
+    </style>
 </head>
 <body>
     <!-- Sticky Navigation -->
@@ -226,6 +229,341 @@
         </div>
     </footer>
 
-    <script src="js/animations.js"></script>
+    <!-- INLINE JAVASCRIPT - This will fix your animation issues -->
+    <script>
+        // Animation system using GSAP and Lenis
+        class SalonifyAnimations {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                // Initialize smooth scrolling
+                this.initSmoothScroll();
+                
+                // Initialize scroll animations
+                this.initScrollAnimations();
+                
+                // Initialize micro-interactions
+                this.initMicroInteractions();
+                
+                // Initialize mobile menu
+                this.initMobileMenu();
+            }
+
+            initSmoothScroll() {
+                // Initialize Lenis for smooth scrolling
+                const lenis = new Lenis({
+                    duration: 1.2,
+                    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                    direction: 'vertical',
+                    gestureDirection: 'vertical',
+                    smooth: true,
+                    smoothTouch: false,
+                    touchMultiplier: 2,
+                });
+
+                function raf(time) {
+                    lenis.raf(time);
+                    requestAnimationFrame(raf);
+                }
+
+                requestAnimationFrame(raf);
+
+                // Update GSAP scroll trigger when Lenis updates
+                lenis.on('scroll', ScrollTrigger.update);
+
+                // Let GSAP handle the scroll proxy
+                gsap.ticker.add((time) => {
+                    lenis.raf(time * 1000);
+                });
+
+                gsap.ticker.lagSmoothing(0);
+            }
+
+            initScrollAnimations() {
+                // Register ScrollTrigger plugin
+                gsap.registerPlugin(ScrollTrigger);
+
+                // Hero section animations
+                this.animateHeroSection();
+
+                // Feature tiles animation
+                this.animateFeatureTiles();
+
+                // Steps animation
+                this.animateSteps();
+
+                // Testimonials animation
+                this.animateTestimonials();
+
+                // Trust badges animation
+                this.animateTrustBadges();
+            }
+
+            animateHeroSection() {
+                // Hero text animation
+                gsap.from('.hero__title, .hero__subtitle', {
+                    duration: 1,
+                    y: 60,
+                    opacity: 0,
+                    stagger: 0.2,
+                    ease: "power3.out"
+                });
+
+                // CTA buttons animation
+                gsap.from('.hero__cta-group', {
+                    duration: 0.8,
+                    y: 30,
+                    opacity: 0,
+                    delay: 0.6,
+                    ease: "power3.out"
+                });
+
+                // Hero visual animation
+                gsap.from('.hero__mockup', {
+                    duration: 1.2,
+                    scale: 0.8,
+                    opacity: 0,
+                    rotationY: 15,
+                    delay: 0.3,
+                    ease: "power3.out"
+                });
+
+                // Background gradient animation on scroll
+                gsap.to('.hero__gradient', {
+                    scale: 1.2,
+                    opacity: 0.3,
+                    scrollTrigger: {
+                        trigger: '.hero',
+                        start: 'top top',
+                        end: 'bottom top',
+                        scrub: true
+                    }
+                });
+            }
+
+            animateFeatureTiles() {
+                gsap.from('.feature-tile', {
+                    duration: 0.8,
+                    y: 60,
+                    opacity: 0,
+                    stagger: 0.15,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: '.features',
+                        start: 'top 80%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse'
+                    }
+                });
+            }
+
+            animateSteps() {
+                gsap.from('.step', {
+                    duration: 0.6,
+                    y: 40,
+                    opacity: 0,
+                    stagger: 0.1,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: '.steps',
+                        start: 'top 70%',
+                        end: 'bottom 30%',
+                        toggleActions: 'play none none reverse'
+                    }
+                });
+            }
+
+            animateTestimonials() {
+                gsap.from('.testimonial', {
+                    duration: 0.8,
+                    y: 50,
+                    opacity: 0,
+                    stagger: 0.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: '.testimonials',
+                        start: 'top 80%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse'
+                    }
+                });
+            }
+
+            animateTrustBadges() {
+                gsap.from('.trust-badge', {
+                    duration: 0.5,
+                    scale: 0.8,
+                    opacity: 0,
+                    stagger: 0.1,
+                    ease: "back.out(1.7)",
+                    scrollTrigger: {
+                        trigger: '.trust',
+                        start: 'top 85%',
+                        end: 'bottom 15%',
+                        toggleActions: 'play none none reverse'
+                    }
+                });
+            }
+
+            initMicroInteractions() {
+                // Add hover effects to all interactive elements
+                this.addHoverEffects();
+                
+                // Add click animations
+                this.addClickAnimations();
+            }
+
+            addHoverEffects() {
+                // Enhanced button hover effects
+                const buttons = document.querySelectorAll('.btn');
+                buttons.forEach(button => {
+                    button.addEventListener('mouseenter', (e) => {
+                        gsap.to(e.target, {
+                            duration: 0.3,
+                            scale: 1.03,
+                            ease: "power2.out"
+                        });
+                    });
+                    
+                    button.addEventListener('mouseleave', (e) => {
+                        gsap.to(e.target, {
+                            duration: 0.3,
+                            scale: 1,
+                            ease: "power2.out"
+                        });
+                    });
+                });
+
+                // Enhanced card hover effects
+                const cards = document.querySelectorAll('.feature-tile, .testimonial');
+                cards.forEach(card => {
+                    card.addEventListener('mouseenter', (e) => {
+                        gsap.to(e.currentTarget, {
+                            duration: 0.4,
+                            y: -8,
+                            boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
+                            ease: "power2.out"
+                        });
+                    });
+                    
+                    card.addEventListener('mouseleave', (e) => {
+                        gsap.to(e.currentTarget, {
+                            duration: 0.4,
+                            y: 0,
+                            boxShadow: '0 8px 30px rgba(0,0,0,0.08)',
+                            ease: "power2.out"
+                        });
+                    });
+                });
+            }
+
+            addClickAnimations() {
+                // Add click animation to CTA buttons
+                const ctaButtons = document.querySelectorAll('.btn--primary, .btn--secondary');
+                ctaButtons.forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        if (e.target.getAttribute('href') && e.target.getAttribute('href').startsWith('#')) {
+                            e.preventDefault();
+                            
+                            gsap.to(e.target, {
+                                duration: 0.1,
+                                scale: 0.95,
+                                ease: "power2.in",
+                                yoyo: true,
+                                repeat: 1
+                            });
+                            
+                            // Smooth scroll to target
+                            const targetId = e.target.getAttribute('href').substring(1);
+                            const targetElement = document.getElementById(targetId);
+                            if (targetElement) {
+                                gsap.to(window, {
+                                    duration: 1.2,
+                                    scrollTo: {
+                                        y: targetElement,
+                                        offsetY: 80
+                                    },
+                                    ease: "power2.inOut"
+                                });
+                            }
+                        }
+                    });
+                });
+            }
+
+            initMobileMenu() {
+                const hamburger = document.querySelector('.nav__hamburger');
+                const navMenu = document.querySelector('.nav__menu');
+                
+                if (hamburger && navMenu) {
+                    hamburger.addEventListener('click', () => {
+                        const isExpanded = hamburger.classList.toggle('active');
+                        navMenu.classList.toggle('nav__menu--mobile');
+                        
+                        // Animate hamburger to X
+                        gsap.to(hamburger.querySelectorAll('span'), {
+                            duration: 0.3,
+                            rotation: isExpanded ? 45 : 0,
+                            y: isExpanded ? 6 : 0,
+                            stagger: 0.1,
+                            ease: "power2.out"
+                        });
+                        
+                        gsap.to(hamburger.querySelectorAll('span')[1], {
+                            duration: 0.3,
+                            opacity: isExpanded ? 0 : 1,
+                            ease: "power2.out"
+                        });
+                        
+                        gsap.to(hamburger.querySelectorAll('span')[2], {
+                            duration: 0.3,
+                            rotation: isExpanded ? -45 : 0,
+                            y: isExpanded ? -6 : 0,
+                            ease: "power2.out"
+                        });
+                        
+                        // Animate menu in/out
+                        if (isExpanded) {
+                            gsap.fromTo(navMenu, 
+                                { 
+                                    opacity: 0, 
+                                    y: -20,
+                                    display: 'flex'
+                                },
+                                { 
+                                    opacity: 1, 
+                                    y: 0,
+                                    duration: 0.4,
+                                    ease: "power2.out"
+                                }
+                            );
+                        } else {
+                            gsap.to(navMenu, {
+                                opacity: 0,
+                                y: -20,
+                                duration: 0.3,
+                                ease: "power2.in",
+                                onComplete: () => {
+                                    navMenu.classList.remove('nav__menu--mobile');
+                                }
+                            });
+                        }
+                    });
+                }
+            }
+        }
+
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new SalonifyAnimations();
+        });
+
+        // Respect reduced motion preference
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            gsap.globalTimeline.timeScale(0.5);
+        }
+    </script>
 </body>
 </html>
