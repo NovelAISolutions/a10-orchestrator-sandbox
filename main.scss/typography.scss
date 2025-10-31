@@ -1,0 +1,118 @@
+// scss/_typography.scss
+// Typography system
+
+// Display text
+.display {
+    font-family: $font-accent;
+    font-size: $display-size;
+    line-height: $display-line;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: $spacing-md;
+}
+
+// Heading 1
+h1, .h1 {
+    font-family: $font-primary;
+    font-size: $h1-size;
+    line-height: $h1-line;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: $spacing-md;
+}
+
+// Heading 2
+h2, .h2 {
+    font-family: $font-primary;
+    font-size: $h2-size;
+    line-height: $h2-line;
+    font-weight: 500;
+    margin-bottom: $spacing-sm;
+}
+
+// Body text
+body {
+    font-family: $font-primary;
+    font-size: $body-size;
+    line-height: $body-line;
+    font-weight: 400;
+    color: $neutral-800;
+}
+
+// Caption text
+.caption {
+    font-size: $caption-size;
+    line-height: $caption-line;
+    font-weight: 500;
+    color: $neutral-600;
+}
+
+// Links
+a {
+    color: $salonify-rose;
+    text-decoration: none;
+    transition: color $duration-fast $ease-out;
+    
+    &:hover {
+        color: darken($salonify-rose, 10%);
+    }
+}
+
+// Buttons
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-xs $spacing-md;
+    border-radius: $radius-sm;
+    font-weight: 600;
+    font-size: $body-size;
+    line-height: 1;
+    border: none;
+    cursor: pointer;
+    transition: all $duration-fast $ease-out;
+    text-decoration: none;
+    
+    &--primary {
+        background: $salonify-rose;
+        color: $white;
+        
+        &:hover {
+            background: darken($salonify-rose, 8%);
+            transform: scale(1.03);
+        }
+    }
+    
+    &--secondary {
+        background: transparent;
+        color: $neutral-800;
+        border: 1px solid $neutral-300;
+        
+        &:hover {
+            border-color: $salonify-rose;
+            color: $salonify-rose;
+        }
+    }
+    
+    &--text {
+        background: transparent;
+        color: $neutral-800;
+        padding: $spacing-xs 0;
+        
+        &:hover {
+            color: $salonify-rose;
+        }
+    }
+    
+    &--large {
+        padding: $spacing-sm $spacing-lg;
+        font-size: 1.125rem;
+    }
+}
+
+// Focus styles for accessibility
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid $salonify-rose;
+    outline-offset: 2px;
+}
