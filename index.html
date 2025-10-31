@@ -3,50 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Showcasing the vibrant collaboration between Labubu and Gurley Team.">
-    <meta property="og:title" content="Labubu x Gurley Team Collaboration">
-    <meta property="og:description" content="Explore the art and characters from Labubu and Gurley Team.">
-    <meta property="og:image" content="images/hero-banner.jpg">
-    <title>Labubu x Gurley Team</title>
+    <title>Labubu x Gurley Team | Art Meets Imagination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="hero">
-        <h1>Gurley Team x Labubu</h1>
-        <img src="images/hero-banner.jpg" alt="Hero Banner">
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Labubu x Gurley</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#showcase" class="nav-link">Showcase</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2>About the Collaboration</h2>
-        <p>Discover the creative blend of Labubu's playful art with Gurley Team's stylish aesthetic.</p>
-    </section>
-
-    <section id="showcase">
-        <h2>Labubu Character Showcase</h2>
-        <div class="gallery-grid">
-            <img src="images/labubu1.jpg" alt="Labubu Figure 1">
-            <img src="images/labubu2.jpg" alt="Labubu Figure 2">
-            <img src="images/labubu3.jpg" alt="Labubu Figure 3">
-            <img src="images/labubu4.jpg" alt="Labubu Figure 4">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Labubu x Gurley Team — Art Meets Imagination</h1>
+            <p class="hero-subtitle">Discover the magical collaboration between Labubu's whimsical world and Gurley Team's artistic vision</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Explore Now</button>
         </div>
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="carousel">
-            <img src="images/sample-gallery1.jpg" alt="Gallery Image 1">
-            <img src="images/sample-gallery2.jpg" alt="Gallery Image 2">
-            <!-- Additional gallery images -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>The Collaboration Story</h2>
+                    <p>Labubu, the beloved character from the fantasy world, joins forces with the innovative Gurley Team to create a collection that bridges imagination and artistic excellence.</p>
+                    <p>This unique partnership brings together whimsical storytelling with cutting-edge design, resulting in pieces that captivate collectors and art enthusiasts alike.</p>
+                    <p>Each creation tells a story of creativity, passion, and the magic that happens when different artistic worlds collide.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">Collaboration Artwork</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Labubu x Gurley Team. All rights reserved.</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Exclusive Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Unique Artistry</h3>
+                    <p>Each piece showcases the distinctive styles of both Labubu and Gurley Team, creating truly one-of-a-kind artworks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Limited Edition</h3>
+                    <p>Exclusive releases with limited quantities, making each item a valuable addition to any collection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💫</div>
+                    <h3>Premium Quality</h3>
+                    <p>Meticulously crafted with the finest materials and attention to detail in every aspect.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Storytelling</h3>
+                    <p>Every creation comes with a narrative that connects the Labubu universe with Gurley's artistic vision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <h2 class="section-title">Collection Showcase</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="product-placeholder">Product Image 1</div>
+                    <h3>Whimsical Dreams</h3>
+                    <p>Limited Edition Sculpture</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="product-placeholder">Product Image 2</div>
+                    <h3>Magic Fusion</h3>
+                    <p>Art Print Series</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="product-placeholder">Product Image 3</div>
+                    <h3>Fantasy Realm</h3>
+                    <p>Collector's Set</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="product-placeholder">Product Image 4</div>
+                    <h3>Imagination Unleashed</h3>
+                    <p>Digital Art Collection</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="product-placeholder">Product Image 5</div>
+                    <h3>Collaborative Vision</h3>
+                    <p>Special Edition Box</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="product-placeholder">Product Image 6</div>
+                    <h3>Artistic Symphony</h3>
+                    <p>Premium Art Book</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Labubu x Gurley Team</div>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Labubu x Gurley Team. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
