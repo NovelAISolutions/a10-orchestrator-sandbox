@@ -1,0 +1,80 @@
+// scss/components/_tiles.scss
+// Feature tiles component
+
+.features {
+    background: $white;
+    position: relative;
+    
+    .container {
+        max-width: $container-max;
+        margin: 0 auto;
+        padding: 0 $spacing-md;
+    }
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $spacing-lg;
+        
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: $spacing-md;
+        }
+    }
+}
+
+.feature-tile {
+    background: $white;
+    padding: $spacing-lg;
+    border-radius: $radius-lg;
+    border: 1px solid $neutral-300;
+    text-align: center;
+    transition: all $duration-normal $ease-out;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, $salonify-rose, $accent-gold);
+        transform: scaleX(0);
+        transition: transform $duration-normal $ease-out;
+    }
+    
+    &:hover {
+        transform: translateY(-12px);
+        box-shadow: $shadow-large;
+        border-color: $salonify-rose;
+        
+        &::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-tile__icon {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, $salonify-rose, $accent-gold);
+        }
+    }
+    
+    &__icon {
+        font-size: 3rem;
+        margin-bottom: $spacing-md;
+        transition: all $duration-normal $ease-out;
+    }
+    
+    &__title {
+        font-size: $h2-size;
+        font-weight: 600;
+        margin-bottom: $spacing-sm;
+        color: $neutral-800;
+    }
+    
+    &__desc {
+        color: $neutral-600;
+        line-height: $body-line;
+    }
+}
