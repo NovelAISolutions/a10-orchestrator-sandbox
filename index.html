@@ -1,164 +1,231 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labubu x Gurley Team | Art Meets Imagination</title>
+    <title>Salonify — All-in-One SaaS Platform for Salons</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.0.45/lenis.min.js"></script>
+    
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Labubu x Gurley</div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#showcase" class="nav-link">Showcase</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    <!-- Sticky Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <h2>Salonify</h2>
+            </div>
+            
+            <ul class="nav__menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#for-salons">For Salons</a></li>
+                <li><a href="#for-customers">For Customers</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li class="nav__cta"><a href="#login" class="btn btn--secondary">Login</a></li>
+                <li class="nav__cta"><a href="#signup" class="btn btn--primary">Sign Up Free</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            
+            <div class="nav__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Labubu x Gurley Team — Art Meets Imagination</h1>
-            <p class="hero-subtitle">Discover the magical collaboration between Labubu's whimsical world and Gurley Team's artistic vision</p>
-            <button class="cta-button" onclick="scrollToSection('about')">Explore Now</button>
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Your Salon. Your Brand. Your Platform.</h1>
+                <p class="hero__subtitle">Create beautiful, branded salon websites that drive bookings and grow your business. Everything you need in one elegant platform.</p>
+                <div class="hero__cta-group">
+                    <a href="#signup" class="btn btn--primary btn--large">Get Started Free</a>
+                    <a href="#demo" class="btn btn--text">Watch Demo →</a>
+                </div>
+            </div>
+            
+            <div class="hero__visual">
+                <div class="hero__gradient"></div>
+                <!-- Placeholder for salon dashboard mockup -->
+                <div class="hero__mockup"></div>
+            </div>
+            
+            <div class="hero__scroll-cue">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"></div>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Feature Rail -->
+    <section class="features" id="features">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>The Collaboration Story</h2>
-                    <p>Labubu, the beloved character from the fantasy world, joins forces with the innovative Gurley Team to create a collection that bridges imagination and artistic excellence.</p>
-                    <p>This unique partnership brings together whimsical storytelling with cutting-edge design, resulting in pieces that captivate collectors and art enthusiasts alike.</p>
-                    <p>Each creation tells a story of creativity, passion, and the magic that happens when different artistic worlds collide.</p>
+            <div class="features__grid">
+                <div class="feature-tile">
+                    <div class="feature-tile__icon">💅</div>
+                    <h3 class="feature-tile__title">Build Your Website</h3>
+                    <p class="feature-tile__desc">Create a stunning, mobile-optimized site that reflects your salon's unique style.</p>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">Collaboration Artwork</div>
+                
+                <div class="feature-tile">
+                    <div class="feature-tile__icon">📅</div>
+                    <h3 class="feature-tile__title">Manage Appointments</h3>
+                    <p class="feature-tile__desc">Streamline booking, cancellations, and reminders with our smart calendar.</p>
+                </div>
+                
+                <div class="feature-tile">
+                    <div class="feature-tile__icon">📈</div>
+                    <h3 class="feature-tile__title">Grow Your Business</h3>
+                    <p class="feature-tile__desc">Track performance, gather reviews, and unlock valuable insights.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- 5-Step Process -->
+    <section class="steps" id="for-salons">
         <div class="container">
-            <h2 class="section-title">Exclusive Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Unique Artistry</h3>
-                    <p>Each piece showcases the distinctive styles of both Labubu and Gurley Team, creating truly one-of-a-kind artworks.</p>
+            <h2 class="steps__title">Start in 5 Simple Steps</h2>
+            <div class="steps__process">
+                <div class="step">
+                    <div class="step__number">01</div>
+                    <h3 class="step__title">Sign Up</h3>
+                    <p class="step__desc">Create your account in seconds</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Limited Edition</h3>
-                    <p>Exclusive releases with limited quantities, making each item a valuable addition to any collection.</p>
+                
+                <div class="step">
+                    <div class="step__number">02</div>
+                    <h3 class="step__title">Set Up Profile</h3>
+                    <p class="step__desc">Add your logo, photos, and brand</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💫</div>
-                    <h3>Premium Quality</h3>
-                    <p>Meticulously crafted with the finest materials and attention to detail in every aspect.</p>
+                
+                <div class="step">
+                    <div class="step__number">03</div>
+                    <h3 class="step__title">Add Stylists</h3>
+                    <p class="step__desc">Build your team and services</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌟</div>
-                    <h3>Storytelling</h3>
-                    <p>Every creation comes with a narrative that connects the Labubu universe with Gurley's artistic vision.</p>
+                
+                <div class="step">
+                    <div class="step__number">04</div>
+                    <h3 class="step__title">Start Booking</h3>
+                    <p class="step__desc">Accept appointments instantly</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step__number">05</div>
+                    <h3 class="step__title">Track Success</h3>
+                    <p class="step__desc">Monitor growth and reviews</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Showcase Section -->
-    <section id="showcase" class="showcase">
+    <!-- Testimonials Carousel -->
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Collection Showcase</h2>
-            <div class="showcase-grid">
-                <div class="showcase-item">
-                    <div class="product-placeholder">Product Image 1</div>
-                    <h3>Whimsical Dreams</h3>
-                    <p>Limited Edition Sculpture</p>
+            <h2 class="testimonials__title">Loved by Salon Owners</h2>
+            <div class="testimonials__carousel">
+                <div class="testimonial">
+                    <div class="testimonial__avatar">SB</div>
+                    <p class="testimonial__quote">"Salonify transformed our booking process. We're saving 10+ hours weekly on admin work!"</p>
+                    <div class="testimonial__author">
+                        <strong>Sarah Bennett</strong>
+                        <span>Owner, Bloom Beauty</span>
+                    </div>
                 </div>
-                <div class="showcase-item">
-                    <div class="product-placeholder">Product Image 2</div>
-                    <h3>Magic Fusion</h3>
-                    <p>Art Print Series</p>
+                
+                <div class="testimonial">
+                    <div class="testimonial__avatar">MJ</div>
+                    <p class="testimonial__quote">"The branded website feature helped us stand out. Our bookings increased by 45% in two months."</p>
+                    <div class="testimonial__author">
+                        <strong>Marcus Johnson</strong>
+                        <span>Director, The Gentlemen's Cut</span>
+                    </div>
                 </div>
-                <div class="showcase-item">
-                    <div class="product-placeholder">Product Image 3</div>
-                    <h3>Fantasy Realm</h3>
-                    <p>Collector's Set</p>
-                </div>
-                <div class="showcase-item">
-                    <div class="product-placeholder">Product Image 4</div>
-                    <h3>Imagination Unleashed</h3>
-                    <p>Digital Art Collection</p>
-                </div>
-                <div class="showcase-item">
-                    <div class="product-placeholder">Product Image 5</div>
-                    <h3>Collaborative Vision</h3>
-                    <p>Special Edition Box</p>
-                </div>
-                <div class="showcase-item">
-                    <div class="product-placeholder">Product Image 6</div>
-                    <h3>Artistic Symphony</h3>
-                    <p>Premium Art Book</p>
+                
+                <div class="testimonial">
+                    <div class="testimonial__avatar">LC</div>
+                    <p class="testimonial__quote">"Finally, a platform that understands the beauty industry. Our clients love the seamless booking experience."</p>
+                    <div class="testimonial__author">
+                        <strong>Lena Chen</strong>
+                        <span>Founder, Zen Spa</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Trust Badge Wall -->
+    <section class="trust">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
+            <div class="trust__badges">
+                <div class="trust-badge">GDPR Compliant</div>
+                <div class="trust-badge">Stripe Secure Payments</div>
+                <div class="trust-badge">ISO 27001 Ready</div>
+                <div class="trust-badge">24/7 Support</div>
+                <div class="trust-badge">SSL Encrypted</div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Labubu x Gurley Team</div>
-                <div class="social-links">
-                    <a href="#" class="social-link">Facebook</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Instagram</a>
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Salonify</h3>
+                    <p>Empowering salons with beautiful technology.</p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Product</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Updates</a>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Security</a>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4>Connect</h4>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Labubu x Gurley Team. All rights reserved.</p>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 Salonify. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
