@@ -1,0 +1,60 @@
+// scss/_variables.scss
+// Design tokens for Salonify theme
+
+// Colors - Warm rose palette
+$salonify-rose: #E66B5D;
+$salonify-blush: #F9E4E1;
+$black: #000000;
+$white: #FFFFFF;
+$neutral-800: #1B1C1D;
+$neutral-600: #4A4B4C;
+$neutral-300: #D1D5DB;
+$neutral-100: #F8FAFC;
+
+// Accent colors
+$accent-gold: #F6B93B;
+$accent-teal: #2D9CDB;
+
+// Typography
+$font-primary: 'Inter', system-ui, sans-serif;
+$font-accent: 'Playfair Display', serif;
+
+// Type scale
+$display-size: 4rem; // 64px
+$display-line: 4.5rem; // 72px
+$h1-size: 3rem; // 48px
+$h1-line: 3.5rem; // 56px
+$h2-size: 2rem; // 32px
+$h2-line: 2.5rem; // 40px
+$body-size: 1.125rem; // 18px
+$body-line: 1.75rem; // 28px
+$caption-size: 0.875rem; // 14px
+$caption-line: 1.25rem; // 20px
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 8rem;
+
+// Layout
+$container-max: 1200px;
+$grid-columns: 12;
+$grid-gap: 2rem;
+
+// Border radius
+$radius-sm: 0.5rem;
+$radius-md: 1rem;
+$radius-lg: 2rem;
+
+// Shadows
+$shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+$shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+$shadow-large: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+// Animation
+$ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+$duration-fast: 250ms;
+$duration-normal: 400ms;
+$duration-slow: 600ms;
