@@ -1,0 +1,99 @@
+// scss/components/_testimonials.scss
+// Testimonials carousel component
+
+.testimonials {
+    background: $white;
+    
+    .container {
+        max-width: $container-max;
+        margin: 0 auto;
+        padding: 0 $spacing-md;
+    }
+    
+    &__title {
+        text-align: center;
+        margin-bottom: $spacing-xl;
+        font-family: $font-accent;
+        font-size: $h1-size;
+        color: $neutral-800;
+    }
+    
+    &__carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $spacing-lg;
+        
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: $spacing-md;
+        }
+    }
+}
+
+.testimonial {
+    background: $white;
+    padding: $spacing-lg;
+    border-radius: $radius-lg;
+    border: 1px solid $neutral-300;
+    text-align: center;
+    transition: all $duration-normal $ease-out;
+    
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: $shadow-medium;
+        border-color: $salonify-rose;
+    }
+    
+    &__avatar {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, $salonify-rose, $accent-gold);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto $spacing-md;
+        color: $white;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    &__quote {
+        font-style: italic;
+        color: $neutral-800;
+        line-height: $body-line;
+        margin-bottom: $spacing-md;
+        position: relative;
+        
+        &::before,
+        &::after {
+            content: '"';
+            color: $salonify-blush;
+            font-size: 2rem;
+            position: absolute;
+        }
+        
+        &::before {
+            top: -10px;
+            left: -5px;
+        }
+        
+        &::after {
+            bottom: -20px;
+            right: -5px;
+        }
+    }
+    
+    &__author {
+        strong {
+            display: block;
+            color: $neutral-800;
+            margin-bottom: $spacing-xs;
+        }
+        
+        span {
+            color: $neutral-600;
+            font-size: $caption-size;
+        }
+    }
+}
